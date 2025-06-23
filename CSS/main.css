@@ -1,0 +1,417 @@
+/*Fontes em rem para serem ajustadas pela função de acessibilidade*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Forum&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:#F5F5F5;
+  scroll-behavior: smooth;
+}
+
+br { /*Seleção de novas linhas desativadas*/
+  user-select: none;
+}
+
+.sidebar { /*Barra de menu lateral*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #E6E6E6;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 20px;
+  z-index: 9999;
+}
+
+.item { /*Posição das opções do menu*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8125rem;
+  margin-bottom: 15px;
+}
+
+.sidebar .icon { /*Organização dos itens e escritas*/
+  background-color: #E6E6E6;
+  color: 	#2B2B2B;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+  user-select: none;
+}
+
+a { /*Decoração dos links*/
+  text-decoration: none;
+  color: 	#2B2B2B;
+  user-select: none;
+}
+
+span.main{ /*Cor da página atual*/
+  color: #FF8C42;
+}
+
+.fontegoogle { /*Fonte Google principal*/
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 13px;
+  margin-bottom: 0;
+  user-select: none;
+}
+
+.fonte2 { /*Fonte Google secundária*/
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.875rem;
+  margin-left: 58%;
+  margin-top: 0;
+  color: #FF8C42;
+  user-select: none;
+}
+
+header { /*Fundo e padding título*/
+  background-color: #dddddd;
+  padding: 3px;
+}
+
+.topnav { /*Navegação superior em sticky, abaixo do header*/
+  overflow: hidden;
+  background-color: #dab17c;
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  font-size: 1.25rem;
+  z-index: 9999;
+}
+
+.topnav a { /*Opções da navegação*/
+  float:right;
+  display: block;
+  color: rgb(61, 61, 61);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#opcao:hover { /*Opções da navegação ao passar o mouse*/
+  background-color: #696363;
+  color: rgb(245, 239, 239);
+}
+
+a:hover{ /*Opacidade dos itens/links laterais, ao passar o mouse*/
+  opacity: 0.6;
+}
+
+::-webkit-scrollbar { /*Barra de rolagem personalizada*/
+  width: 10px;
+}
+
+::-webkit-scrollbar-track { /*Sombra da barra de rolagem*/
+  box-shadow: inset 0 0 5px grey; 
+}
+
+::-webkit-scrollbar-thumb { /*Indicador personalizado*/
+  background: gray; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover { /*Ao passar em cima do indicador*/
+  background: #ffd17c; 
+}
+
+::selection { /*Seleção de textos personalizada*/
+  color: rgb(61, 61, 61);
+  background: #ffd17c;
+}
+
+.progress-container { /*Barra indicadora topnav*/
+  width: 100%;
+  height: 8px;
+  align-content: end;
+  background: #dab17c;
+}
+
+.progress-bar { /*Personalização barra indicadora*/
+  height: 8px;
+  background: #ffd17c;
+  width: 0%;
+}
+
+.subtitulo { /*Subtítulo esquerda*/
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1875rem;
+  margin-left: 20%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  user-select: none;
+}
+
+.subtitulo2 { /*Subtitulo direita*/
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.1875rem;
+  margin-left: 77%;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  user-select: none;
+}
+
+#divDiagonal { /*Div diagonal laranja*/
+  width: 260px;
+  height: 250px;
+  background:#ffd17c;
+  transform: skew(-20deg);
+  position: relative;
+  left:69%;
+  top:40px;
+  z-index: 1;
+}
+
+#divDiagonal2 { /*Div diagonal laranja esquerda*/
+  width: 260px;
+  height: 250px;
+  background:#ffd17c;
+  transform: skew(-20deg);
+  position: relative;
+  left:17%;
+  top:40px;
+  z-index: 1;
+}
+
+#imagem { /*Imagens diagonal*/
+  width: 250px;
+  height: 250px;
+  background: rgb(61, 61, 61);
+  transform: skew(-20deg);
+  position: relative;
+  left:69%;
+  bottom: 200px;
+  z-index: 999;
+  user-select: none;
+}
+
+#imagem2 { /*Imagem esquerda*/
+  width: 250px;
+  height: 250px;
+  background: rgb(61, 61, 61);
+  transform: skew(-20deg);
+  position: relative;
+  left:17%;
+  bottom: 200px;
+  z-index: 999;
+  user-select: none;
+}
+
+#texto { /*Div diagonal textos*/
+  width: 620px;
+  height: 220px;
+  background: rgb(61, 61, 61);
+  transform: skew(-20deg);
+  position: relative;
+  left:22%;
+  bottom:0;
+  margin-top: -452px;
+  color:#ffffff;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+#texto2 { /*Div diagonal texto direita*/
+  width: 620px;
+  height: 220px;
+  background: rgb(61, 61, 61);
+  transform: skew(-20deg);
+  position: relative;
+  left:36%;
+  bottom:0;
+  margin-top: -452px;
+  color:#ffffff;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.collapsible { /*Barra de conteúdo dobrável (dicas)*/
+  background-color: rgb(61, 61, 61);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 500px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  margin-left: 20%;
+}
+
+.collapsible:after { /*Símbolo lateral do collapsible*/
+  content: '\002B';
+  color: #dab17c;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible:hover{ /*Opacidade ao passar mouse*/
+  opacity: 0.8;
+}
+
+.active:after { /*Troca de símbolo collapsible*/
+  content: "\2212";
+}
+
+.content { /*Conteúdo collapsible*/
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #dddddd;
+  width: 464px;
+  margin-left: 20%;
+  color: rgb(0, 0, 0);
+}
+
+.footer { /*Rodapé ajustado*/
+  padding: 15px;
+  text-align: center;
+  background-color:#dab17c;
+  margin-top: 20px;
+  color: rgb(61, 61, 61);
+}
+
+ul{ /*Numeração romana listas*/
+  list-style:upper-roman inside;
+}
+
+#casadark, /*Ícones modo dark ocultos*/
+#globodark,
+#marcadordark,
+#upfdark,
+#light,
+#zoomdark {
+  display: none;
+}
+
+
+/*Personalização modo noturno*/
+
+.darkTheme { 
+  background-color: #39393a;
+  color: white;
+}
+
+.darkTheme .sidebar{
+  background-color: rgb(30, 30, 31);
+  border-color: #211b24;
+}
+
+.darkTheme span {
+  color: rgb(233, 233, 233);
+}
+
+.darkTheme span.main{
+  color: #dba6ff;
+}
+
+.darkTheme .icon {
+  background-color: rgb(30, 30, 31);
+}
+
+.darkTheme::-webkit-scrollbar-thumb:hover{
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme::-webkit-scrollbar-track {
+  background-color: #292727; 
+}
+
+.darkTheme ::selection {
+  color: rgb(24, 23, 23);
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme .progress-container {
+  background: #ce78df;
+}
+
+.darkTheme .progress-bar{
+  background:rgb(252, 171, 255);
+}
+
+.darkTheme header{
+  background-color:rgb(47, 47, 51);
+}
+
+.darkTheme .topnav{
+  background-color: #ce78df;  
+}
+
+.darkTheme #texto2 {
+  background: rgb(223, 221, 221);
+  color: #211b24;
+}
+
+.darkTheme #divDiagonal2 {
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme .fonte2 {
+  color:#dba6ff;
+}
+
+.darkTheme #divDiagonal {
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme #texto {
+  background: rgb(223, 221, 221);
+  color: #211b24;
+}
+
+.darkTheme .info:hover {
+  background-color: #ce78df;  
+}
+
+.darkTheme .content{
+  background-color: rgb(47, 47, 51);
+  color: white;
+}
+
+.darkTheme .collapsible {
+  background-color:rgb(223, 221, 221);
+  color: #211b24;
+}
+
+.darkTheme .collapsible:after{
+  color:#ce78df;
+}
+
+.darkTheme .footer {
+  background-color:#ce78df;
+}

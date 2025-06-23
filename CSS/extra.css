@@ -1,0 +1,215 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #dfe2e4;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  gap: 20px;
+  border-right: 1px solid #d1cfcf;
+  z-index: 9999;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #181717;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.sidebar .icon {
+  background-color: #dfe2e4;
+  color: #000000;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+  user-select: none;
+}
+
+.sidebar {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  user-select: none;
+}
+
+span.extra{
+  color: #d18800;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffd17c; 
+}
+
+::selection {
+  color: rgb(61, 61, 61);
+  background: #ffd17c;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+.parallax { /*Imagem de fundo 1*/
+  background-image: url('../IMG/wall1.jpg');
+  height: 100%; 
+  filter: grayscale(70%) brightness(70%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.parallax2 { /*Imagem de fundo 2*/
+  background-image: url('../IMG/Breathe2.jpg');
+  height: 100%; 
+  filter: grayscale(80%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.white-overlay { /*Camada branca modo padrão*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.caption { /*Título central*/
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.border { /*Personalização título central*/
+  background-color: #dfe2e4;
+  width: 40%;
+  margin: 0 auto;        
+  display: flex;
+  justify-content: center;
+  color: #111;
+  padding: 18px;
+  font-size: 1.562rem;
+  letter-spacing: 10px;
+}
+
+.card { /*Card para cartilha*/
+  height:1100px;
+  background-color:#dddddd;
+  font-size:36px
+}
+
+#casadark,
+#globodark,
+#marcadordark,
+#upfdark,
+#light {
+    display: none;
+}
+
+
+/*Personalização modo noturno*/
+
+.darkTheme {
+  background-color: #39393a;
+  color: white;
+}
+
+.darkTheme .sidebar{
+  background-color: rgb(30, 30, 31);
+  border-color: #211b24;
+}
+
+.darkTheme span {
+  color: rgb(233, 233, 233);
+}
+
+.darkTheme span.extra{
+  color: #dba6ff;
+}
+
+.darkTheme .icon {
+  background-color: rgb(30, 30, 31);
+}
+
+.darkTheme .border{
+background-color: #111;
+color: #fff;
+}
+
+.darkTheme .white-overlay{
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.darkTheme .parallax {
+  filter:brightness(50%) sepia(0%)
+}
+
+.darkTheme .parallax2 {
+  filter:brightness(50%) sepia(0%)
+}
+
+.darkTheme .card{
+  background-color:rgb(47, 47, 51);
+}
+
+.darkTheme ::selection {
+  color: rgb(61, 61, 61);
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme::-webkit-scrollbar-thumb:hover{
+  background: rgb(252, 171, 255);
+}
+
+.darkTheme::-webkit-scrollbar-track {
+  background-color: #292727; 
+}
